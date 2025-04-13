@@ -1,0 +1,109 @@
+
+@media screen and (min-width:1024px){
+.slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide-image {
+    width: 870px;
+    height: 540px;
+    border-radius: 15px;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    z-index: -200;
+    
+    /* Add your image styles here */
+  }
+  
+  .prev {
+    background-color: #000000a9;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+    border: none;
+    padding: 15px 15px 15px;
+    margin: 10px 10px 200px;
+    cursor: pointer;
+    /* Add your button styles here */
+    position: absolute;
+    top: 395px;
+    left: 50px;
+    border-radius: 7px;
+  }
+  .next {
+    background-color: #000000a9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 20px;
+    font-size: 15px;
+    border: none;
+    padding: 15px 25px 15px;
+    margin: 10px 10px 200px;
+    cursor: pointer;
+    /* Add your button styles here */
+    position: absolute;
+    top: 395px;
+    left: 820px;
+    border-radius: 7px;
+  }
+}
+
+
+
+@media screen and (max-width:767px){
+  .slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide-image {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 90px;
+    left: 8.6px;
+    z-index: -200;
+    
+    /* Add your image styles here */
+  }
+  
+  .prev {
+    background-color: #000000a9;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+    border: none;
+    padding: 7px 7px 7px;
+    margin: 10px 10px 200px;
+    cursor: pointer;
+    /* Add your button styles here */
+    position: absolute;
+    top: 210px;
+    left: 5px;
+    border-radius: 7px;
+  }
+  .next {
+    background-color: #000000a9;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px 5px;
+    margin: 10px 10px 200px;
+    cursor: pointer;
+    /* Add your button styles here */
+    position: absolute;
+    top: 210px;
+    left: 422px;
+    border-radius: 7px;
+    
+  }
+}

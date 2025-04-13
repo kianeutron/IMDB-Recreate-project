@@ -1,0 +1,1763 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media screen and (min-width:1024px){
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.menubox{
+    width: 100%;
+    height: 56px;
+    background-color: rgb(18, 17, 17);
+}
+.imdblogo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -8px;
+    left: 90px;
+    cursor: pointer;
+}
+.useapp{
+    width: 70px;
+    height: 35px;
+    color: #000000;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(255, 196, 0) ;
+    position: absolute;
+    top: 9px;
+    left: 435px;
+    border-radius: 7px;
+    border: transparent;
+    cursor: pointer;
+    display: none;
+}
+.menumenu{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 13px;
+    left: 170px;
+    border-radius: 3px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.menumenu:hover{
+    background-color: #232323;
+    cursor: pointer;
+}
+.menutext{
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 6px;
+    left: 40px;
+}
+.menuicon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 17.5px;
+    left: 180px;
+}
+.searchbar{
+    position: absolute;
+    top: 12px;
+    left: 280px;
+    width: 650px;
+    height: 20px;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 15px;
+    color: #232323;
+    padding: 5px 0px 5px 70px;
+}
+
+.linesearch{
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    top: 12px;
+    left: 330px;
+}
+.alltextsearch{
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 290px;
+    top: 19px;
+    cursor: pointer;
+}
+.arrow1{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 315px;
+    top: 22px;
+    cursor: pointer;
+}
+.magnif{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 970px;
+    top: 17px;
+}
+.p1imdbprobox{
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 18px;
+    left: 1030px;
+    cursor: pointer;
+}
+.p2imdbprobox{
+    color: rgb(65, 162, 231);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 18px;
+    left: 1068px;
+    cursor: pointer;
+}
+.invertlinemenu{
+    width: 17px;
+    height: 30px;
+    position: absolute;
+    left: 1110px;
+    top: 13px;
+    opacity: 80%;
+}
+.savedicon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 1140px;
+    top: 17.5px;
+    cursor: pointer;
+}
+.plus{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 1144.9px;
+    top: 19px;
+    opacity: 70%;
+    cursor: pointer;
+}
+.watchlisttext{
+    color: whitesmoke;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 18.5px;
+    left: 1167px;
+    cursor: pointer;
+}
+.watchlisttext:hover{
+    color: yellow;
+}
+.signintext{
+    color: whitesmoke;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 18.5px;
+    left: 1250px;
+    cursor: pointer;
+}
+.signintext:hover{
+    color: yellow;
+}
+.entext{
+    color: whitesmoke;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 18.5px;
+    left: 1320px;
+    cursor: pointer;
+}
+.entext:hover{
+    color: yellow;
+}
+.down2{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 1348px;
+    top: 22px;
+    cursor: pointer;
+}
+.boxside{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: 100px;
+    top: 140px;
+    opacity: 40%;
+    background-color: transparent;
+    box-shadow: inset -80px 170px 400px -140px  rgb(101, 101, 101);
+    border-radius: 10px;
+}
+.upnext{
+    color: rgb(239, 199, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 940px;
+}
+.imdbside1{
+    width: 90px;
+    height: 130px;
+    position: absolute;
+    left: 960px;
+    top: 160px;
+    border-radius: 10px;
+}
+.imdbside2{
+    width: 90px;
+    height: 130px;
+    position: absolute;
+    left: 960px;
+    top: 307px;
+    border-radius: 10px;
+}
+.imdbside3{
+    width: 90px;
+    height: 130px;
+    position: absolute;
+    left: 960px;
+    top: 454px;
+    border-radius: 10px;
+}
+.playbtnicon1{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 165px;
+    left: 1065px;
+}
+.playbtnicon2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 460px;
+    left: 1065px;
+}
+.playbtnicon3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 315px;
+    left: 1065px;
+}
+.time1bside{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 185px;
+    left: 1107px;
+
+}
+.time2bside{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 335px;
+    left: 1107px;
+
+}
+.time3bside{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 480px;
+    left: 1107px;
+
+}
+
+
+.subtext1{
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 210px;
+    left: 1067px;
+}
+.subbtext1{
+    color: rgb(198, 197, 197);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 235px;
+    left: 1067px;
+}
+.subtext2{
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 360px;
+    left: 1067px;
+}
+.subbtext2{
+    color: rgb(198, 197, 197);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 385px;
+    left: 1067px;
+}
+.subtext3{
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 505px;
+    left: 1067px;
+}
+.subbtext3{
+    color: rgb(198, 197, 197);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 530px;
+    left: 1067px;
+}
+.likeicon1{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 1069px;
+    top: 260px;
+}
+.likeicon2{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 1069px;
+    top: 410px;
+}
+.likeicon3{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 1069px;
+    top: 555px;
+}
+.likes1{
+    color: rgb(198, 197, 197);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 263px;
+    left: 1093px;
+}
+.likes2{
+    color: rgb(198, 197, 197);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 412px;
+    left: 1093px;
+}
+
+.likes3{
+    color: rgb(198, 197, 197);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 558px;
+    left: 1093px;
+}
+
+.Browset{
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    top: 620px;
+    right: 330px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.next1{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 620px;
+    right: 300px;
+}
+.feature{
+    color: rgb(236, 204, 0);
+    font-size: 33px;
+    font-weight: bold;
+    position: absolute;
+    top: 700px;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vertical1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1100px;
+    left: 70px;
+}
+.mostpopular{
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 1109px;
+    left: 108px;
+}
+.next2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 1111px;
+    left: 455px;
+}
+.celeb1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1200px;
+    left:350px;
+}
+.celeb2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+}
+.celeb3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1200px;
+    left: 600px;
+}
+.celeb4{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1200px;
+    left: 850px;
+}
+
+.celeb6{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1200px;
+    left: 1100px;
+}
+.firstactor{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1440px;
+    left: 130px;
+}
+.secactor{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1440px;
+    left: 385px;
+}
+.thirdactor{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1440px;
+    left: 630px;
+}
+.fourthactor{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1440px;
+    left: 915px;
+}
+.fifactor{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1440px;
+    left: 1130px;
+}
+.actor1rank{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1410px;
+    left: 180px;
+}
+.uparrow{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1410px;
+    left: 205px;
+}
+.actor2rank{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1410px;
+    left: 440px;
+}
+.uparrow2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1410px;
+    left: 455px;
+}
+.actor3rank{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1410px;
+    left: 690px;
+}
+.downarrow{
+    width: 17px;
+    height:17px;
+    position: absolute;
+    top: 1415px;
+    left: 707px;
+}
+.actor4rank{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1410px;
+    left: 940px;
+}
+.uparrow3{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1410px;
+    left: 955px;
+}
+.actor5rank{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1410px;
+    left: 1180px;
+}
+.downarrow2{
+    width: 17px;
+    height:17px;
+    position: absolute;
+    top: 1415px;
+    left: 1207px;
+}
+.whattwatch{
+    color: rgb(255, 208, 0);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 1520px;
+    left: 100px;
+}
+.vertical2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1580px;
+    left: 70px;
+}
+.fromurwatch{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 1590px;
+    left: 110px;
+}
+.next3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 1588px;
+    left: 355px;
+}
+.getmorerec{
+    color: rgb(79, 143, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 1520px;
+    left: 1100px;
+}
+.next1blue{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 1518px;
+    left: 1290px;
+}
+.bookgrey{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1700px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.add1{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1707px;
+    left: 712px;
+}
+.booktext1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    top: 1765px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.booktext2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 1795px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.signinbookbtn{
+    width: 160px;
+    height: 35px;
+    background-color: #171717;
+    color: rgb(79, 143, 252);
+    position: absolute;
+    top: 1855px;
+    left: 50%;
+    transform: translate(-50%);
+    border: transparent;
+    border-radius: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.signinbookbtn:hover{
+    background-color:#191e25 ;
+}
+.box1futured{
+    background-color: transparent;
+    width: 400px;
+    height: 220px;
+    border-radius: 15px;
+    position: absolute;
+    top: 770px;
+    left: 100px;
+
+}
+.box1futuredtext1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 1010px;
+    left: 100px;
+}
+.box1futuredtext2{
+    color: rgb(89, 149, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 1040px;
+    left: 100px;
+}
+.box2futured{
+    background-color: transparent;
+    width: 400px;
+    height: 220px;
+    border-radius: 15px;
+    position: absolute;
+    top: 770px;
+    left: 550px;
+    
+}
+.box2futuredtext1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 1010px;
+    left: 550px;
+}
+.box2futuredtext2{
+    color: rgb(89, 149, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 1040px;
+    left: 550px;
+}
+.movie1poster{
+    width: 133.3px;
+    height: 220px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    top: 770px;
+    left: 100px;
+    cursor: pointer;
+}
+.movie1poster:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.movie2poster{
+    width: 133.3px;
+    height: 220px;
+    position: absolute;
+    top: 770px;
+    left: 240px;
+    cursor: pointer;
+}
+.movie2poster:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.movie3poster{
+    width: 133.3px;
+    height: 220px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    top: 770px;
+    left: 380px;
+    cursor: pointer;
+}
+.movie3poster:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.movie4poster{
+    width: 133.3px;
+    height: 220px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    top: 770px;
+    left: 550px;
+    cursor: pointer;
+}
+.movie4poster:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.movie5poster{
+    width: 133.3px;
+    height: 220px;
+    position: absolute;
+    top: 770px;
+    left: 690px;
+    cursor: pointer;
+}
+.movie5poster:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.movie6poster{
+    width: 133.3px;
+    height: 220px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    top: 770px;
+    left: 830px;
+    cursor: pointer;
+}
+.movie6poster:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+            /*mobile responsive*/
+
+
+
+
+
+
+
+
+
+            
+
+@media screen and (max-width:767px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    .menubox{
+        width: 100%;
+        height: 56px;
+        background-color: rgb(18, 17, 17);
+    }
+    .imdblogo{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: -8px;
+        left: 70px;
+        cursor: pointer;
+    }
+    .menumenu{
+        width: 100px;
+        height: 30px;
+        background-color: transparent;
+        position: absolute;
+        top: 13px;
+        left: 170px;
+        border-radius: 3px;
+        transition: all;
+        transition-duration: 0.3s;
+        display: none;
+    }
+    .menumenu:hover{
+        background-color: #232323;
+        cursor: pointer;
+    }
+    .menutext{
+        font-size: 15px;
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 6px;
+        left: 40px;
+        display: none;
+    }
+    .menuicon{
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+    }
+    .menuicon:hover{
+        cursor: pointer;
+    }
+    .searchbar{
+        position: absolute;
+        top: 12px;
+        left: 280px;
+        width: 650px;
+        height: 20px;
+        border-radius: 5px;
+        border: transparent;
+        font-size: 15px;
+        color: #232323;
+        padding: 5px 0px 5px 70px;
+        display: none;
+    }
+    
+    .linesearch{
+        width: 15px;
+        height: 30px;
+        position: absolute;
+        top: 12px;
+        left: 330px;
+        display: none;
+    }
+    .alltextsearch{
+        font-size: 15px;
+        color: rgb(44, 44, 44);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        left: 290px;
+        top: 19px;
+        cursor: pointer;
+        display: none;
+    }
+    .arrow1{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 315px;
+        top: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    .magnif{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 330px;
+        top: 17px;
+        cursor: pointer;
+        filter: brightness(120);
+    }
+    .p1imdbprobox{
+        color: whitesmoke;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 18px;
+        left: 1030px;
+        cursor: pointer;
+        display: none;
+    }
+    .p2imdbprobox{
+        color: rgb(65, 162, 231);
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 18px;
+        left: 1068px;
+        display: none;
+        cursor: pointer;
+    }
+    .invertlinemenu{
+        width: 17px;
+        height: 30px;
+        position: absolute;
+        left: 1110px;
+        top: 13px;
+        opacity: 80%;
+        display: none;
+    }
+    .savedicon{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 1140px;
+        top: 17.5px;
+        cursor: pointer;
+        display: none;
+    }
+    .plus{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 1144.9px;
+        top: 19px;
+        opacity: 70%;
+        cursor: pointer;
+        display: none;
+    }
+    .watchlisttext{
+        color: whitesmoke;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 18.5px;
+        left: 1167px;
+        cursor: pointer;
+        display: none;
+    }
+    .watchlisttext:hover{
+        color: yellow;
+    }
+    .signintext{
+        color: whitesmoke;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 18.5px;
+        left: 370px;
+        cursor: pointer;
+    }
+    .signintext:hover{
+        color: yellow;
+    }
+    .useapp{
+        width: 70px;
+        height: 35px;
+        color: #000000;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:rgb(255, 196, 0) ;
+        position: absolute;
+        top: 9px;
+        left: 435px;
+        border-radius: 7px;
+        border: transparent;
+        cursor: pointer;
+    }
+    .entext{
+        color: whitesmoke;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 18.5px;
+        left: 1320px;
+        cursor: pointer;
+        display: none;
+    }
+    .entext:hover{
+        color: yellow;
+    }
+    .down2{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 1348px;
+        top: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    .boxside{
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        right: 100px;
+        top: 140px;
+        opacity: 40%;
+        background-color: transparent;
+        box-shadow: inset -80px 170px 400px -140px  rgb(101, 101, 101);
+        border-radius: 10px;
+        display: none;
+    }
+    .upnext{
+        color: rgb(239, 199, 0);
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 100px;
+        left: 940px;
+        display: none;
+    }
+    .imdbside1{
+        width: 90px;
+        height: 130px;
+        position: absolute;
+        left: 960px;
+        top: 160px;
+        border-radius: 10px;
+        display: none;
+    }
+    .imdbside2{
+        width: 90px;
+        height: 130px;
+        position: absolute;
+        left: 960px;
+        top: 307px;
+        border-radius: 10px;
+        display: none;
+    }
+    .imdbside3{
+        width: 90px;
+        height: 130px;
+        position: absolute;
+        left: 960px;
+        top: 454px;
+        border-radius: 10px;
+        display: none;
+    }
+    .playbtnicon1{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        left: 1065px;
+        display: none;
+    }
+    .playbtnicon2{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 460px;
+        left: 1065px;
+        display: none;
+    }
+    .playbtnicon3{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 315px;
+        left: 1065px;
+        display: none;
+    }
+    .time1bside{
+        color: rgb(190, 190, 190);
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 185px;
+        left: 1107px;
+    
+        display: none;
+    }
+    .time2bside{
+        color: rgb(190, 190, 190);
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 335px;
+        left: 1107px;
+        display: none;
+    
+    }
+    .time3bside{
+        color: rgb(190, 190, 190);
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 480px;
+        left: 1107px;
+        display: none;
+    
+    }
+    
+    
+    .subtext1{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 210px;
+        left: 1067px;
+        display: none;
+    }
+    .subbtext1{
+        color: rgb(198, 197, 197);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 235px;
+        left: 1067px;
+        display: none;
+    }
+    .subtext2{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 360px;
+        left: 1067px;
+        display: none;
+    }
+    .subbtext2{
+        color: rgb(198, 197, 197);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 385px;
+        left: 1067px;
+        display: none;
+    }
+    .subtext3{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 505px;
+        left: 1067px;
+        display: none;
+    }
+    .subbtext3{
+        color: rgb(198, 197, 197);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 530px;
+        left: 1067px;
+        display: none;
+    }
+    .likeicon1{
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 1069px;
+        top: 260px;
+        display: none;
+    }
+    .likeicon2{
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 1069px;
+        top: 410px;
+        display: none;
+    }
+    .likeicon3{
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 1069px;
+        top: 555px;
+        display: none;
+    }
+    .likes1{
+        color: rgb(198, 197, 197);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 263px;
+        left: 1093px;
+        display: none;
+    }
+    .likes2{
+        color: rgb(198, 197, 197);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 412px;
+        left: 1093px;
+        display: none;
+    }
+    
+    .likes3{
+        color: rgb(198, 197, 197);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 558px;
+        left: 1093px;
+        display: none;
+    }
+    
+    .Browset{
+        color: white;
+        font-size: 21px;
+        position: absolute;
+        top: 620px;
+        right: 330px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display: none;
+    }
+    .next1{
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: 620px;
+        right: 300px;
+        display: none;
+    }
+    .feature{
+        color: rgb(236, 204, 0);
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        top: 420px;
+        left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .vertical1{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 1070px;
+        left: 10px;
+       
+    }
+    .mostpopular{
+        color: white;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 1080px;
+        left: 50px;
+        
+    }
+    .next2{
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: 1080px;
+        left: 335px;
+       
+    }
+    .celeb1{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1160px;
+        left:40px;
+    }
+    .celeb2{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1160px;
+        left: 270px;
+    }
+    .celeb3{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1450px;
+        left: 40px;
+    }
+    .celeb4{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1450px;
+        left: 270px;
+    }
+    
+    .celeb6{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1200px;
+        left: 1100px;
+        display: none;
+    }
+    .firstactor{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1350px;
+        left: 310px;
+    }
+    .secactor{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1350px;
+        left: 80px;
+    }
+    .thirdactor{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1665px;
+        left: 86px;
+    }
+    .fourthactor{
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1665px;
+        left: 345px;
+    }
+    .fifactor{
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1440px;
+        left: 1130px;
+        display: none;
+    }
+    .actor1rank{
+        color: white;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1380px;
+        left: 110px;
+    }
+    .uparrow{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 1380px;
+        left: 135px;
+    }
+    .actor2rank{
+        color: white;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1380px;
+        left: 350px;
+    }
+    .uparrow2{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 1380px;
+        left: 365px;
+    }
+    .actor3rank{
+        color: white;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1695px;
+        left: 125px;
+    }
+    .downarrow{
+        width: 17px;
+        height:17px;
+        position: absolute;
+        top: 1700px;
+        left: 145px;
+    }
+    .actor4rank{
+        color: white;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1695px;
+        left: 360px;
+    }
+    .uparrow3{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 1695px;
+        left: 375px;
+    }
+    .actor5rank{
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 1410px;
+        left: 1180px;
+        display: none;
+    }
+    .downarrow2{
+        width: 17px;
+        height:17px;
+        position: absolute;
+        top: 1415px;
+        left: 1207px;
+        display: none;
+    }
+    .whattwatch{
+        color: rgb(255, 208, 0);
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 1756px;
+        left: 40px;
+    }
+    .vertical2{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 1800px;
+        left: 20px;
+    }
+    .fromurwatch{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        top: 1810px;
+        left: 60px;
+    }
+    .next3{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 1807px;
+        left: 300px;
+    }
+    .getmorerec{
+        color: rgb(79, 143, 252);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        position: absolute;
+        top: 1520px;
+        left: 1100px;
+        display: none;
+    }
+    .next1blue{
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 1518px;
+        left: 1290px;
+        display: none;
+    }
+    .bookgrey{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 1900px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .add1{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 1907px;
+        left: 250px;
+    }
+    .booktext1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        top: 1955px;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
+    .booktext2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        position: absolute;
+        top: 1990px;
+        left: 50%;
+        transform: translate(-50%);
+        margin-right: -220px;
+        
+    
+    }
+    .signinbookbtn{
+        width: 160px;
+        height: 35px;
+        background-color: #171717;
+        color: rgb(79, 143, 252);
+        position: absolute;
+        top: 2040px;
+        left: 50%;
+        transform: translate(-50%);
+        border: transparent;
+        border-radius: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .signinbookbtn:hover{
+        background-color:#191e25 ;
+    }
+    .box1futured{
+        background-color: transparent;
+        width: 400px;
+        height: 220px;
+        border-radius: 15px;
+        position: absolute;
+        top: 770px;
+        left: 100px;
+    
+    }
+    .box1futuredtext1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        position: absolute;
+        top: 965px;
+        left: 120px;
+    }
+    .box1futuredtext2{
+        color: rgb(89, 149, 253);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        position: absolute;
+        top: 1000px;
+        left: 190px;
+    }
+    .box2futured{
+        background-color: transparent;
+        width: 400px;
+        height: 220px;
+        border-radius: 15px;
+        position: absolute;
+        top: 770px;
+        left: 550px;
+        
+    }
+    .box2futuredtext1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top: 1010px;
+        left: 550px;
+        display: none;
+    }
+    .box2futuredtext2{
+        color: rgb(89, 149, 253);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top: 1040px;
+        left: 550px;
+        display: none;
+        
+    }
+    .movie1poster{
+        width: 150px;
+        height: 220px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 470px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .movie1poster:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+    .movie2poster{
+        width: 150px;
+        height: 220px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 470px;
+        left: 160px;
+        cursor: pointer;
+    }
+    .movie2poster:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+    .movie3poster{
+        width: 150px;
+        height: 220px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 468px;
+        left: 300px;
+        cursor: pointer;
+    }
+    .movie3poster:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+    .movie4poster{
+        width: 150px;
+        height: 220px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 710px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .movie4poster:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+    .movie5poster{
+        width: 150px;
+        height: 220px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 710px;
+        left: 160px;
+        cursor: pointer;
+    }
+    .movie5poster:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+    .movie6poster{
+        width: 150px;
+        height: 220px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 710px;
+        left: 300px;
+        cursor: pointer;
+    }
+    .movie6poster:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
